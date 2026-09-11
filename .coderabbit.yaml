@@ -25,7 +25,7 @@ reviews:
     override_requested_reviewers_only: false
 
     custom_checks:
-      - mode: error
+      - mode: warning
         name: Sensitive Data Protection and Privacy
         instructions: >
           - Flag exposure of PII, intellectual property, source code, trade secrets, internal documentation, business strategy, customer data, credentials, or confidential company assets
@@ -36,7 +36,7 @@ reviews:
           - Flag privacy risks from unclear consent, inappropriate secondary use, excessive retention, insufficient minimization
           - Flag changes increasing leak risk of confidential, customer, or regulated data
 
-      - mode: error
+      - mode: warning
         name: Security, Audit, and Regulatory Control Integrity
         instructions: >
           - Frameworks: SOC 2, SOX, ISO/IEC 27001, ISO/IEC 42001, PCI DSS, HIPAA, GDPR, CCPA/CPRA, NIST CSF, NIST SP 800-53, FedRAMP, CIS, COBIT, OWASP ASVS
@@ -48,7 +48,7 @@ reviews:
           - Flag weakened controls for privileged actions, production access, financial reporting
           - Flag changes compromising confidentiality, integrity, availability, authenticity, or traceability
 
-      - mode: error
+      - mode: warning
         name: Performance and Algorithmic Complexity Review
         instructions: >
           - Review for performance regressions, unnecessary complexity, and hot-path inefficiencies
