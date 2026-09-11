@@ -5,7 +5,7 @@
 inheritance: true
 
 knowledge_base:
-  automatic_repository_linking: true
+  automatic_linking_mode: auto
   code_guidelines:
     filePatterns: ["**/*.md"]
 
